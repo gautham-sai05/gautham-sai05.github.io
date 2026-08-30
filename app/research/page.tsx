@@ -168,8 +168,7 @@ export default function ResearchPage() {
                 className="card p-5"
                 aria-labelledby={`ctf-name-${ctf.id}`}
               >
-                <div className="flex items-center justify-between mb-3">
-                  <span className="font-mono text-xs text-text-subtle">{ctf.year}</span>
+                <div className="flex items-center justify-end mb-3">
                   <span className="tag text-[10px] px-1.5 py-0.5">{ctf.category}</span>
                 </div>
                 <h3

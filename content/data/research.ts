@@ -78,7 +78,6 @@ export const researchAreas: ResearchArea[] = [
 export type CTFParticipation = {
   id: string;
   name: string;
-  year: number;
   team: string;
   category: string;
   result?: string;
@@ -87,33 +86,29 @@ export type CTFParticipation = {
 
 export const ctfParticipations: CTFParticipation[] = [
   {
-    id: 'wiredctf-2026',
-    name: 'WiredCTF 2026',
-    year: 2026,
+    id: 'wiredctf',
+    name: 'WiredCTF',
     team: 'Team bi0s',
     category: 'Challenge Author / Hardware',
     description: 'Authored hardware-security challenge(s) focused on embedded firmware analysis, protocol reverse engineering, and practical hardware exploitation workflows.',
   },
   {
-    id: 'inctf-2026',
-    name: 'InCTF 2026',
-    year: 2026,
+    id: 'inctf',
+    name: 'InCTF',
     team: 'Team bi0s',
     category: 'Challenge Author / Hardware',
-    description: 'Authored and deployed hardware challenge(s) for InCTF 2026, covering embedded reverse engineering, protocol reconstruction, and device-level security problem design.',
+    description: 'Authored and deployed hardware challenge(s) for InCTF, covering embedded reverse engineering, protocol reconstruction, and device-level security problem design.',
   },
   {
     id: 'bi0s-ctf',
     name: 'bi0s CTF',
-    year: 2025,
     team: 'Team bi0s',
     category: 'Challenge Author / Hardware',
     description: 'Authored embedded and hardware-security challenge(s) for Team bi0s CTF events, emphasizing firmware analysis, hardware debugging, and protocol security puzzles.',
   },
   {
-    id: 'isea-ctf-2026',
-    name: 'ISEA CTF 2026',
-    year: 2026,
+    id: 'isea-ctf',
+    name: 'ISEA CTF',
     team: 'Team bi0s',
     category: 'Hardware / Embedded',
     description: 'Government-sponsored cybersecurity CTF with hardware security and embedded systems challenges.',
