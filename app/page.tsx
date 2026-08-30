@@ -430,7 +430,7 @@ export default function HomePage() {
               <span>Security Research</span>
             </div>
             <p className="hero-body">
-              Designing and implementing embedded systems, firmware, hardware security infrastructure, and security research across embedded and automotive domains. Hardware Team Lead at Team bi0s.
+              Designing and implementing embedded systems, firmware, hardware security infrastructure, and automotive security research across real-world embedded systems. Hardware Team Lead at Team bi0s, with active work in automotive security.
             </p>
 
             <div className="hero-cta-row">
@@ -475,10 +475,10 @@ export default function HomePage() {
 
           <div className="about-copy">
             <p>
-              Third-year Electronics and Communication Engineering student at Amrita Vishwa Vidyapeetham. Hardware Team Lead at Team bi0s working across embedded systems, hardware security, embedded security, automotive security, and firmware.
+              Third-year Electronics and Communication Engineering student at Amrita Vishwa Vidyapeetham. Hardware Team Lead at Team bi0s, working across embedded systems, hardware security, automotive security, and firmware.
             </p>
             <p>
-              My work spans custom PCB design, embedded firmware development (ESP32, STM32), CAN/automotive security research, RF fingerprinting, side-channel analysis, and security infrastructure. I build systems that operate on real hardware with real constraints—not just software.
+              My work spans custom PCB design, embedded firmware development (ESP32, STM32), CAN and automotive security research, RF fingerprinting, side-channel analysis, and security infrastructure. I build systems that operate on real hardware with real constraints—not just software.
             </p>
           </div>
         </div>
@@ -607,7 +607,7 @@ export default function HomePage() {
             <div>
               <h2 className="section-title">Team bi0s / Hardware leadership.</h2>
               <p className="leadership-copy">
-                I currently serve as Hardware Team Lead at Team bi0s, where my work spans embedded security, hardware security, automotive security, firmware, and security research. The role is technical, practical, and centered on how systems are built and how they fail.
+                I currently serve as Hardware Team Lead at Team bi0s, where my work spans embedded security, hardware security, automotive security research, firmware, and practical security engineering. The role is technical, practical, and centered on how systems are built and how they fail.
               </p>
             </div>
             <div className="leadership-card panel-card">
