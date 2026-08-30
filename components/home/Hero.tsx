@@ -52,7 +52,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex flex-col justify-center blueprint-bg pcb-trace overflow-hidden"
+      className="relative min-h-screen flex flex-col justify-center overflow-hidden"
       aria-label="Hero — Gautham Sai, Embedded Systems Engineer"
     >
       {/* Radial glow */}
@@ -63,14 +63,6 @@ export function Hero() {
           background: 'radial-gradient(ellipse 80% 60% at 50% 0%, rgba(77, 168, 255, 0.07) 0%, transparent 70%)',
         }}
       />
-
-      {/* PCB corner decorations */}
-      <div className="absolute top-24 left-8 hidden xl:block" aria-hidden="true">
-        <PCBCorner />
-      </div>
-      <div className="absolute top-24 right-8 hidden xl:block rotate-90" aria-hidden="true">
-        <PCBCorner />
-      </div>
 
       <div
         className="container relative z-10 flex flex-col items-start justify-center"
@@ -208,45 +200,3 @@ export function Hero() {
   );
 }
 
-function PCBCorner() {
-  return (
-    <svg
-      width="120"
-      height="120"
-      viewBox="0 0 120 120"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
-    >
-      {/* Outer L-frame */}
-      <path
-        d="M10 10 L10 60 M10 10 L60 10"
-        stroke="rgba(77,168,255,0.15)"
-        strokeWidth="1"
-        strokeLinecap="round"
-      />
-      {/* Inner trace */}
-      <path
-        d="M20 20 L20 50 L50 50"
-        stroke="rgba(77,168,255,0.1)"
-        strokeWidth="1"
-        strokeLinecap="round"
-      />
-      {/* Pads */}
-      <circle cx="10" cy="10" r="3" fill="none" stroke="rgba(77,168,255,0.25)" strokeWidth="1" />
-      <circle cx="50" cy="50" r="2.5" fill="none" stroke="rgba(77,168,255,0.2)" strokeWidth="1" />
-      <circle cx="10" cy="60" r="2" fill="rgba(77,168,255,0.12)" />
-      <circle cx="60" cy="10" r="2" fill="rgba(77,168,255,0.12)" />
-      {/* Vertical trace detail */}
-      <path
-        d="M30 10 L30 30 L80 30"
-        stroke="rgba(77,168,255,0.06)"
-        strokeWidth="1"
-        strokeLinecap="round"
-      />
-      {/* Small via holes */}
-      <circle cx="30" cy="10" r="1.5" fill="none" stroke="rgba(77,168,255,0.15)" strokeWidth="1" />
-      <circle cx="80" cy="30" r="1.5" fill="none" stroke="rgba(77,168,255,0.15)" strokeWidth="1" />
-    </svg>
-  );
-}

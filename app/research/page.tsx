@@ -18,7 +18,6 @@ export default function ResearchPage() {
     >
       {/* Header */}
       <div
-        className="blueprint-bg"
         style={{ borderBottom: '1px solid var(--color-border)' }}
       >
         <div
