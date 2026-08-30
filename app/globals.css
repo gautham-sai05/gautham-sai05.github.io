@@ -5,20 +5,20 @@
 @tailwind utilities;
 
 :root {
-  --color-bg: #f5f3ef;
-  --color-surface: #f9f7f4;
-  --color-surface-strong: #eef2f8;
-  --color-elevated: #ffffff;
-  --color-text: #111418;
-  --color-text-muted: #5f6772;
-  --color-text-subtle: #7d8692;
-  --color-border: rgba(17, 20, 24, 0.1);
-  --color-border-strong: rgba(47, 91, 234, 0.18);
-  --color-primary: #2f5bea;
-  --color-primary-soft: rgba(47, 91, 234, 0.08);
-  --color-primary-strong: #1f48c9;
-  --color-success: #0f7b6c;
-  --color-warning: #d98a3d;
+  --color-bg: #07151b;
+  --color-surface: #0c1e28;
+  --color-surface-strong: #10283a;
+  --color-elevated: #12314a;
+  --color-text: #edf7ff;
+  --color-text-muted: #b9d6e8;
+  --color-text-subtle: #82a7c2;
+  --color-border: rgba(116, 176, 214, 0.18);
+  --color-border-strong: rgba(147, 215, 255, 0.32);
+  --color-primary: #77d6ff;
+  --color-primary-soft: rgba(119, 214, 255, 0.14);
+  --color-primary-strong: #bcecff;
+  --color-success: #7fe0c3;
+  --color-warning: #f7d494;
   --nav-height: 72px;
   --max-width: 1240px;
   --font-sans: 'IBM Plex Sans', sans-serif;
@@ -36,9 +36,9 @@ html {
 body {
   margin: 0;
   background:
-    radial-gradient(circle at top left, rgba(47, 91, 234, 0.08), transparent 32%),
-    radial-gradient(circle at top right, rgba(15, 123, 108, 0.08), transparent 30%),
-    linear-gradient(180deg, var(--color-bg), #ebe6de 100%);
+    radial-gradient(circle at top, rgba(118, 189, 255, 0.14), transparent 36%),
+    radial-gradient(circle at 80% 10%, rgba(78, 209, 194, 0.08), transparent 25%),
+    linear-gradient(180deg, #06151b 0%, #0b1d28 35%, #071219 100%);
   color: var(--color-text);
   font-family: var(--font-sans);
   font-size: 16px;

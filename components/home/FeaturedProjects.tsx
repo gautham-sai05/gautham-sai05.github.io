@@ -9,8 +9,8 @@ import { projects } from '@/content/data/projects';
 
 function BlueprintProjectArt({ slug }: { slug: string }) {
   const common = {
-    stroke: 'rgba(47,91,234,0.82)',
-    strokeWidth: 1.5,
+    stroke: 'rgba(119,214,255,0.88)',
+    strokeWidth: 1.4,
     fill: 'none',
     strokeLinecap: 'round' as const,
     strokeLinejoin: 'round' as const,
@@ -18,11 +18,10 @@ function BlueprintProjectArt({ slug }: { slug: string }) {
 
   const sharedLines = (
     <>
-      <path d="M18 60 H242" {...common} opacity="0.26" />
-      <path d="M18 110 H242" {...common} opacity="0.2" />
-      <path d="M18 160 H242" {...common} opacity="0.18" />
-      <path d="M70 18 V200" {...common} opacity="0.18" />
-      <path d="M190 18 V200" {...common} opacity="0.18" />
+      <path d="M8 72 H240" {...common} opacity="0.28" />
+      <path d="M8 140 H240" {...common} opacity="0.22" />
+      <path d="M70 16 V210" {...common} opacity="0.2" />
+      <path d="M160 16 V210" {...common} opacity="0.2" />
     </>
   );
 
