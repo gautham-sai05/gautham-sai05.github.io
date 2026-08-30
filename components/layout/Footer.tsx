@@ -53,7 +53,7 @@ export function Footer() {
               <Terminal className="w-4 h-4" aria-hidden="true" />
             </span>
             <span className="brand-name">
-              gautham-sai05<span className="brand-cursor">_</span>
+              GAUTHAM SAI<span className="brand-cursor">_</span>
             </span>
           </div>
           <p className="footer-copy">

@@ -56,15 +56,11 @@ export default function ProjectsPage() {
             >
               {/* Image area */}
               <div
-                className="relative h-44 overflow-hidden flex-shrink-0"
+                className="project-thumb relative h-44 overflow-hidden flex-shrink-0"
                 style={{ backgroundColor: 'var(--color-elevated)' }}
               >
-                <div className="absolute inset-0 blueprint-bg-sm" aria-hidden="true" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="font-mono text-4xl font-bold text-primary/8 select-none">
-                    {project.year}
-                  </span>
-                </div>
+                <div className="absolute inset-0" aria-hidden="true" />
+                <div className="project-thumb-label">{project.year}</div>
                 <div className="absolute top-3 left-3 flex gap-1.5">
                   <span
                     className={`tag text-[10px] ${

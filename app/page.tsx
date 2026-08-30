@@ -216,9 +216,9 @@ const technicalDomains = [
 ];
 
 function ScopeTrace() {
-  const [probeX, setProbeX] = useState(0.5);
   const [reducedMotion, setReducedMotion] = useState(false);
   const [offset, setOffset] = useState(0);
+  const [manualProbeX, setManualProbeX] = useState<number | null>(null);
 
   useEffect(() => {
     const media = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -228,14 +228,17 @@ function ScopeTrace() {
     return () => media.removeEventListener('change', syncMotion);
   }, []);
 
-  // Continuous animation for signal motion
   useEffect(() => {
     if (reducedMotion) return;
     const interval = setInterval(() => {
-      setOffset((prev) => (prev + 1) % 120);
+      if (manualProbeX === null) {
+        setOffset((prev) => (prev + 1) % 120);
+      }
     }, 80);
     return () => clearInterval(interval);
-  }, [reducedMotion]);
+  }, [reducedMotion, manualProbeX]);
+
+  const probeX = manualProbeX ?? (offset / 120);
 
   const getCurrentDomain = () => {
     return technicalDomains.find((d) => probeX >= d.range[0] && probeX < d.range[1]) || technicalDomains[0];
@@ -310,14 +313,14 @@ function ScopeTrace() {
   const handleMove = (event: React.MouseEvent<HTMLDivElement>) => {
     const rect = event.currentTarget.getBoundingClientRect();
     const x = (event.clientX - rect.left) / rect.width;
-    setProbeX(Math.min(0.99, Math.max(0.01, x)));
+    setManualProbeX(Math.min(0.99, Math.max(0.01, x)));
   };
 
   return (
     <div
       className="scope-frame"
       onMouseMove={handleMove}
-      onMouseLeave={() => setProbeX(0.5)}
+      onMouseLeave={() => setManualProbeX(null)}
       aria-label="Technical profile signal journey"
     >
       <div className="scope-header">

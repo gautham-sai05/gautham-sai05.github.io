@@ -53,15 +53,10 @@ export function FeaturedProjects() {
             >
               {/* Project image placeholder */}
               <div
-                className="relative aspect-project overflow-hidden"
+                className="project-thumb relative aspect-project overflow-hidden"
                 style={{ backgroundColor: 'var(--color-elevated)' }}
               >
-                {/* Blueprint pattern as placeholder */}
-                <div
-                  className="absolute inset-0 blueprint-bg-sm"
-                  aria-hidden="true"
-                />
-                {/* Category badge */}
+                <div className="absolute inset-0" aria-hidden="true" />
                 <div className="absolute top-3 left-3 z-10">
                   <span
                     className={`tag text-[11px] ${
@@ -75,12 +70,7 @@ export function FeaturedProjects() {
                     {project.status === 'published' ? '📄 IEEE Published' : project.category}
                   </span>
                 </div>
-                {/* Year badge */}
-                <div className="absolute bottom-3 right-3 z-10">
-                  <span className="font-mono text-xs text-text-subtle bg-background/80 px-2 py-1 rounded-md border border-border">
-                    {project.year}
-                  </span>
-                </div>
+                <div className="project-thumb-label">{project.year}</div>
               </div>
 
               {/* Content */}
